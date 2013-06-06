@@ -39,6 +39,7 @@ module.exports = function (grunt) {
   function compile (source, filepath, fullFilename) {
     var path = require("path"),
         dust = require("dustjs-linkedin"),
+        dusthelper = require("dustjs-helper"),
         name;
 
     if (typeof fullFilename === "function") {
